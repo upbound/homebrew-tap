@@ -1,25 +1,29 @@
 class Up < Formula
     desc "The official Upbound CLI"
     homepage "https://upbound.io"
-    version "v0.1.0-rc.0"
+    version "v0.1.0"
     license "Upbound Software License"
     bottle :unneeded
   
-    # TODO(hasheddan): add sha256 digests for bundles for first stable release
     if OS.mac? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/main/v0.1.0-rc.0/bundle/darwin_amd64.tar.gz"
+      url "https://cli.upbound.io/stable/v0.1.0/bundle/darwin_amd64.tar.gz"
+      sha256 "e78e6af9e62e6bd1a6fe92830dbdbeb267cebb8ae28780ecd8a0204b734d3105"
     end
     if OS.mac? && Hardware::CPU.arm?
-      url "https://cli.upbound.io/main/v0.1.0-rc.0/bundle/darwin_arm64.tar.gz"
+      url "https://cli.upbound.io/stable/v0.1.0/bundle/darwin_arm64.tar.gz"
+      sha256 "55f79f4403b485be61f0b8929d377bb5f785cba7021954bede87a20da24b891f"
     end
     if OS.linux? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/main/v0.1.0-rc.0/bundle/linux_amd64.tar.gz"
+      url "https://cli.upbound.io/stable/v0.1.0/bundle/linux_amd64.tar.gz"
+      sha256 "2e67177ad232c802f7f6ba7e7a03d794316df1c2bb7566066aacae0896535e2f"
     end
     if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/main/v0.1.0-rc.0/bundle/darwin_arm.tar.gz"
+      url "https://cli.upbound.io/stable/v0.1.0/bundle/linux_arm.tar.gz"
+      sha256 "8851b2aeb5986472d2ce8b1d0b51547c9691ddc9ce652c5b169e72d6fb44b91f"
     end
     if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/main/v0.1.0-rc.0/bundle/darwin_arm64.tar.gz"
+      url "https://cli.upbound.io/stable/v0.1.0/bundle/linux_arm64.tar.gz"
+      sha256 "2e44b844dc3077867b9761522dd27ed5ce0f09a045b1fa8ad4483203111a2b47"
     end
   
     def install
