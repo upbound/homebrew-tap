@@ -15,29 +15,29 @@
 class Up < Formula
     desc "The official Upbound CLI"
     homepage "https://upbound.io"
-    version "v0.1.1"
+    version "v0.2.0"
     license "Upbound Software License"
     bottle :unneeded
   
     if OS.mac? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.1.1/bundle/darwin_amd64.tar.gz"
-      sha256 "8e75b29b7aff1e188c6e43979a18f908e9ba64c49bc604af30f0966c3042a7c0"
+      url "https://cli.upbound.io/stable/v0.2.0/bundle/darwin_amd64.tar.gz"
+      sha256 "50e721c1dd8e92b184b629922413f9aaf6dcedc4d8e544d8e57209cae27e1408"
     end
     if OS.mac? && Hardware::CPU.arm?
-      url "https://cli.upbound.io/stable/v0.1.1/bundle/darwin_arm64.tar.gz"
-      sha256 "cd7f936388691afa1c2cbf4de99c712580afd02d686c7c3d843103df32db6b69"
+      url "https://cli.upbound.io/stable/v0.2.0/bundle/darwin_arm64.tar.gz"
+      sha256 "5cb6b48022899139c7fe0726098acee31b4873481ed79fadb3ea67abc9fea69f"
     end
     if OS.linux? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.1.1/bundle/linux_amd64.tar.gz"
-      sha256 "8ede0eea56a144b186827cd3912dbb515eefda511a884a2a7c2683d8c04a81d6"
+      url "https://cli.upbound.io/stable/v0.2.0/bundle/linux_amd64.tar.gz"
+      sha256 "729d5a6efdb85ad6ca3fd003870f10d11c4baaa378de69c1c73d95858d38d964"
     end
     if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.1.1/bundle/linux_arm.tar.gz"
-      sha256 "bea502758c71f50a7e9a1b6a6ac872b86e2303369ba8eec42f6a241834258ef0"
+      url "https://cli.upbound.io/stable/v0.2.0/bundle/linux_arm.tar.gz"
+      sha256 "e5901bef1dd1caaae242fbfa73df6d0689b862a31641634b9d6125ee9bd338d9"
     end
     if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.1.1/bundle/linux_arm64.tar.gz"
-      sha256 "6de74c30ab41857a7c3f11833d0167f5fbd182fa4c7bb88ecbdd0c4f29a665a9"
+      url "https://cli.upbound.io/stable/v0.2.0/bundle/linux_arm64.tar.gz"
+      sha256 "e9ff54ed972e9470d91ae6358de8672203dc77662345f725b55f4029f0d3469c"
     end
   
     def install
