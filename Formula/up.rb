@@ -17,7 +17,6 @@ class Up < Formula
     homepage "https://upbound.io"
     version "v0.4.1"
     license "Upbound Software License"
-    bottle :unneeded
   
     if OS.mac? && Hardware::CPU.intel?
       url "https://cli.upbound.io/stable/v0.4.1/bundle/darwin_amd64.tar.gz"
