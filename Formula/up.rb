@@ -15,28 +15,28 @@
 class Up < Formula
     desc "The official Upbound CLI"
     homepage "https://upbound.io"
-    version "v0.4.1"
+    version "v0.5.0"
     license "Upbound Software License"
   
     if OS.mac? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.4.1/bundle/darwin_amd64.tar.gz"
-      sha256 "ac47de3249a59df51dbf4ed671b9a8f5127c72c50e5007d4e42edea684ec4741"
+      url "https://cli.upbound.io/stable/v0.5.0/bundle/darwin_amd64.tar.gz"
+      sha256 "21232e6c1dc8ffb61b862c22d81475ab495655463158eda20a55681d15407ab4"
     end
     if OS.mac? && Hardware::CPU.arm?
-      url "https://cli.upbound.io/stable/v0.4.1/bundle/darwin_arm64.tar.gz"
-      sha256 "8228f15af58c70ed0402a54d00144ce7c81d0074eccadc40cc9c9fde702e933f"
+      url "https://cli.upbound.io/stable/v0.5.0/bundle/darwin_arm64.tar.gz"
+      sha256 "f1bffe052e9bb3c3be24e8cfc0c42bfdd871a6f6ee45b6bf7b6d818532a13026"
     end
     if OS.linux? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.4.1/bundle/linux_amd64.tar.gz"
-      sha256 "59a96888ff307d5be5cede7417907bd849ef410216ab28ba2e03d8524f0154e8"
+      url "https://cli.upbound.io/stable/v0.5.0/bundle/linux_amd64.tar.gz"
+      sha256 "fe8d2af24d41757d27afe7c2eea9caa3ec5575f2d0619a9233bb2a37362cc571"
     end
     if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.4.1/bundle/linux_arm.tar.gz"
-      sha256 "60e719ed151dbd5ae161848fa1951f70810391b3175918829e38772982a10fc4"
+      url "https://cli.upbound.io/stable/v0.5.0/bundle/linux_arm.tar.gz"
+      sha256 "deb1b7fe4fe5a5865c250fce81e41f05feed767c34126864ae45ef4ba0de707d"
     end
     if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.4.1/bundle/linux_arm64.tar.gz"
-      sha256 "0002bc8d6b520a0e1ae7a6105b0f8010a15fd4fcc0d09053ece1cc55340161f8"
+      url "https://cli.upbound.io/stable/v0.5.0/bundle/linux_arm64.tar.gz"
+      sha256 "536479ad7a8ffb9adf57de1003573a74382a3cb2e972f7e7b12adb3626bf28ac"
     end
   
     def install
