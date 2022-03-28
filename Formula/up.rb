@@ -15,28 +15,28 @@
 class Up < Formula
     desc "The official Upbound CLI"
     homepage "https://upbound.io"
-    version "v0.8.0"
+    version "v0.9.0"
     license "Upbound Software License"
   
     if OS.mac? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.8.0/bundle/darwin_amd64.tar.gz"
-      sha256 "1cee8346e021b542b0c90e6e75475fd1a0a613aa2316dc3618ca3fff2be1e0fa"
+      url "https://cli.upbound.io/stable/v0.9.0/bundle/darwin_amd64.tar.gz"
+      sha256 "dae0c8ced1a70bf63406799f08fd0d519eff771640daee941b47c9487383f77b"
     end
     if OS.mac? && Hardware::CPU.arm?
-      url "https://cli.upbound.io/stable/v0.8.0/bundle/darwin_arm64.tar.gz"
-      sha256 "49915d7df75a719720ceb0f3e7e935fafcaa4d4cacc0b00db7e4f0da70463535"
+      url "https://cli.upbound.io/stable/v0.9.0/bundle/darwin_arm64.tar.gz"
+      sha256 "7462e0e9b304bc3c1bb16ec86aa9b3715f4d7c2287a1c93ef37ced76a5f1d2b0"
     end
     if OS.linux? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.8.0/bundle/linux_amd64.tar.gz"
-      sha256 "a57eecca2a9f8affd1637e2afc6e054c976f44bb57d3a611ec9b62b138cc15fc"
+      url "https://cli.upbound.io/stable/v0.9.0/bundle/linux_amd64.tar.gz"
+      sha256 "e05f96dd7f739c36486edfce7e1625464e11f304c583bfaa15440cebcea910ec"
     end
     if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.8.0/bundle/linux_arm.tar.gz"
-      sha256 "3de3090ceb4de346a2a2581e769655c4a068eb790d089f06264168dd461f2f1c"
+      url "https://cli.upbound.io/stable/v0.9.0/bundle/linux_arm.tar.gz"
+      sha256 "ab7f1f9f80274bb289d614139f6b62c053dd22733bd59cb13779982f25b311e7"
     end
     if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.8.0/bundle/linux_arm64.tar.gz"
-      sha256 "0b9c4dbcb031bdd5e2eff032568b620ad77d08c497c8d22595479b39ce6cb768"
+      url "https://cli.upbound.io/stable/v0.9.0/bundle/linux_arm64.tar.gz"
+      sha256 "9d20a2f627837410825652cea8b237848bd9f73b7bc71c86157ec001c7ce0854"
     end
   
     def install
