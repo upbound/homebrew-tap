@@ -15,28 +15,28 @@
 class Up < Formula
     desc "The official Upbound CLI"
     homepage "https://upbound.io"
-    version "v0.9.0"
+    version "v0.10.0"
     license "Upbound Software License"
   
     if OS.mac? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.9.0/bundle/darwin_amd64.tar.gz"
-      sha256 "dae0c8ced1a70bf63406799f08fd0d519eff771640daee941b47c9487383f77b"
+      url "https://cli.upbound.io/stable/v0.10.0/bundle/darwin_amd64.tar.gz"
+      sha256 "4686503b87b6a2a62d7a40172045031cd8bd8fccc6543568ed6ae4bcd14e6e25"
     end
     if OS.mac? && Hardware::CPU.arm?
-      url "https://cli.upbound.io/stable/v0.9.0/bundle/darwin_arm64.tar.gz"
-      sha256 "7462e0e9b304bc3c1bb16ec86aa9b3715f4d7c2287a1c93ef37ced76a5f1d2b0"
+      url "https://cli.upbound.io/stable/v0.10.0/bundle/darwin_arm64.tar.gz"
+      sha256 "cdd2d45b24d374ecb68452ed7aa58fc2ec4e28827a2e7513b28b5c222c5c6954"
     end
     if OS.linux? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.9.0/bundle/linux_amd64.tar.gz"
-      sha256 "e05f96dd7f739c36486edfce7e1625464e11f304c583bfaa15440cebcea910ec"
+      url "https://cli.upbound.io/stable/v0.10.0/bundle/linux_amd64.tar.gz"
+      sha256 "2d1a9c2b0c5ecbcc76fd242453cf235548ea835e02c962c6fb37de91e27eceda"
     end
     if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.9.0/bundle/linux_arm.tar.gz"
-      sha256 "ab7f1f9f80274bb289d614139f6b62c053dd22733bd59cb13779982f25b311e7"
+      url "https://cli.upbound.io/stable/v0.10.0/bundle/linux_arm.tar.gz"
+      sha256 "eaca79316f163bbdd086d93d2bd5c3de5682a7357ecf1c7c49d782b3b6308f31"
     end
     if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.9.0/bundle/linux_arm64.tar.gz"
-      sha256 "9d20a2f627837410825652cea8b237848bd9f73b7bc71c86157ec001c7ce0854"
+      url "https://cli.upbound.io/stable/v0.10.0/bundle/linux_arm64.tar.gz"
+      sha256 "d8d1bf4945ec01e34775674f074ff34a60caf48f92c8a05ec62423adf001c3b5"
     end
   
     def install
