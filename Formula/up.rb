@@ -15,28 +15,28 @@
 class Up < Formula
     desc "The official Upbound CLI"
     homepage "https://upbound.io"
-    version "v0.12.1"
+    version "v0.12.2"
     license "Upbound Software License"
   
     if OS.mac? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.12.1/bundle/up/darwin_amd64.tar.gz"
-      sha256 "9e3a7d0c8a906a30a3821d7667d90f67685c7efc01e9db7b3b2dd782fee52fbc"
+      url "https://cli.upbound.io/stable/v0.12.2/bundle/up/darwin_amd64.tar.gz"
+      sha256 "68be95d945089e67c5ab60e7a5ea3f0e4443892140a9d140c76a1a1e05f00c94"
     end
     if OS.mac? && Hardware::CPU.arm?
-      url "https://cli.upbound.io/stable/v0.12.1/bundle/up/darwin_arm64.tar.gz"
-      sha256 "3d2a3c2d4bc897d948e92da2cc52bc243ef6b8217021b67c6094d30a7f2f2515"
+      url "https://cli.upbound.io/stable/v0.12.2/bundle/up/darwin_arm64.tar.gz"
+      sha256 "01f0d1094d9dabafe006eb2f5ba1d39e8a6598f29b88f0ad0d0ab48bf3c7bd0d"
     end
     if OS.linux? && Hardware::CPU.intel?
-      url "https://cli.upbound.io/stable/v0.12.1/bundle/up/linux_amd64.tar.gz"
+      url "https://cli.upbound.io/stable/v0.12.2/bundle/up/linux_amd64.tar.gz"
       sha256 "fa9817753a131f6b9f8c3be77c0c6f5b35e01925052b68ea32e64c88f0399db2"
     end
     if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.12.1/bundle/up/linux_arm.tar.gz"
-      sha256 "3d85466fa4e39ccb0a224690c061e69d207531cc23aa1a1696ac7880bf4b198c"
+      url "https://cli.upbound.io/stable/v0.12.2/bundle/up/linux_arm.tar.gz"
+      sha256 "1db5fa70be70c64f81fe0ef5845a73234d503b0df97efb4bb94c0caafd300152"
     end
     if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://cli.upbound.io/stable/v0.12.1/bundle/up/linux_arm64.tar.gz"
-      sha256 "abb980283399b1f5c1567f75cfc00447caf7fa7973a2c027b8bf3bdd19c58d34"
+      url "https://cli.upbound.io/stable/v0.12.2/bundle/up/linux_arm64.tar.gz"
+      sha256 "0686562379e7ce2734964d75643273983907f430cfd0e51386b76d39a9f2715a"
     end
   
     def install
