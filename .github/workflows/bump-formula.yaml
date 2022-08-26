@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       old_version:
-        description: 'Old version'
+        description: 'Old version (example: v0.13.0)'
         required: true
       new_version:
-        description: 'New version'
+        description: 'New version (example: v0.14.0)'
         required: true
 
 jobs:
@@ -19,7 +19,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
-          bundler-cache: true
       - name: Bump formula versions
         run: .github/bump-formula.rb ${{ github.event.inputs.old_version }} ${{ github.event.inputs.new_version }}
       - name: Create Pull Request
