@@ -1,0 +1,31 @@
+name: Bump Formula
+
+on:
+  workflow_dispatch:
+    inputs:
+      old_version:
+        description: 'Old version'
+        required: true
+      new_version:
+        description: 'New version'
+        required: true
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+      - name: Bump formula versions
+        run: .github/bump-formula.rb ${{ github.event.inputs.old_version }} ${{ github.event.inputs.new_version }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Bump forumla versions from `${{ github.event.inputs.old_version }}` to `${{ github.event.inputs.new_version }}`
+          title:  Bump forumla versions from `${{ github.event.inputs.old_version }}` to `${{ github.event.inputs.new_version }}`
+          body: |
+            Bumps formula versions from `${{ github.event.inputs.old_version }}` to `${{ github.event.inputs.new_version }}`
