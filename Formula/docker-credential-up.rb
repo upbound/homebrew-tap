@@ -17,28 +17,28 @@
 class DockerCredentialUp < Formula
   desc 'Upbound Docker credential helper'
   homepage 'https://upbound.io'
-  version 'v0.24.1'
+  version 'v0.24.2'
   license 'Upbound Software License'
 
   if OS.mac? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.24.1/bundle/docker-credential-up/darwin_amd64.tar.gz'
-    sha256 '7d16f390040266a8c6746f6d579b2e08d081db2cd6b74701697199eb7c92ac6e'
+    url 'https://cli.upbound.io/stable/v0.24.2/bundle/docker-credential-up/darwin_amd64.tar.gz'
+    sha256 '18f428011af815f9f63355cc80c461008e44171e4b591d247e95bc0251a9881c'
   end
   if OS.mac? && Hardware::CPU.arm?
-    url 'https://cli.upbound.io/stable/v0.24.1/bundle/docker-credential-up/darwin_arm64.tar.gz'
-    sha256 'ce1211c2aeb5512c0380b25d72ca72f61d6ad38de179488faa5f873f6236a68b'
+    url 'https://cli.upbound.io/stable/v0.24.2/bundle/docker-credential-up/darwin_arm64.tar.gz'
+    sha256 '436caaa1efbd3dbaf04106ec3af0608e6c2028a9720cb1e2651e58d0d3f022fd'
   end
   if OS.linux? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.24.1/bundle/docker-credential-up/linux_amd64.tar.gz'
-    sha256 'e4421f7c5da6c5fdf63e17123deac0748fa14de41f38e9d3b6e3cfa2c4e57c24'
+    url 'https://cli.upbound.io/stable/v0.24.2/bundle/docker-credential-up/linux_amd64.tar.gz'
+    sha256 '5fd9c3b98cf65e62fd2cbdb10a02b4ee86e4443caa07eb136e38ad1f0742aafa'
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.24.1/bundle/docker-credential-up/linux_arm.tar.gz'
-    sha256 '508719718c253734b5b8605b02e8f8e8b1a77fb4c6904048ca070cd9327b4273'
+    url 'https://cli.upbound.io/stable/v0.24.2/bundle/docker-credential-up/linux_arm.tar.gz'
+    sha256 '7623c59bc8180d54b387ac4f36d4228a6abaec3cbd44627782711eabb1600428'
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.24.1/bundle/docker-credential-up/linux_arm64.tar.gz'
-    sha256 '77e0c5dd5708389139bc9f9cb9ffebaa9d2ef312d9a80c3d33ea524f0ac6db5e'
+    url 'https://cli.upbound.io/stable/v0.24.2/bundle/docker-credential-up/linux_arm64.tar.gz'
+    sha256 '33fc1b8b62857c7c731835fdae941e7217626e2146235bfbdb69d3bb7b61fd8e'
   end
 
   def install
