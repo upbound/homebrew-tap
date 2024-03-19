@@ -22,23 +22,23 @@ class Up < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url 'https://cli.upbound.io/stable/v0.26.0/bundle/up/darwin_amd64.tar.gz'
-    sha256 'f44620e2d350ee03cbf131c922e6355b992a12f8cbe7f819ff37dcbc5e765637'
+    sha256 '1a33651f3cdd6c743054bc528cf6c78a538f0bdb9a01d3a96587d1d9880c5032'
   end
   if OS.mac? && Hardware::CPU.arm?
     url 'https://cli.upbound.io/stable/v0.26.0/bundle/up/darwin_arm64.tar.gz'
-    sha256 'f44620e2d350ee03cbf131c922e6355b992a12f8cbe7f819ff37dcbc5e765637'
+    sha256 '1a33651f3cdd6c743054bc528cf6c78a538f0bdb9a01d3a96587d1d9880c5032'
   end
   if OS.linux? && Hardware::CPU.intel?
     url 'https://cli.upbound.io/stable/v0.26.0/bundle/up/linux_amd64.tar.gz'
-    sha256 'f44620e2d350ee03cbf131c922e6355b992a12f8cbe7f819ff37dcbc5e765637'
+    sha256 '1a33651f3cdd6c743054bc528cf6c78a538f0bdb9a01d3a96587d1d9880c5032'
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
     url 'https://cli.upbound.io/stable/v0.26.0/bundle/up/linux_arm.tar.gz'
-    sha256 'f44620e2d350ee03cbf131c922e6355b992a12f8cbe7f819ff37dcbc5e765637'
+    sha256 '1a33651f3cdd6c743054bc528cf6c78a538f0bdb9a01d3a96587d1d9880c5032'
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url 'https://cli.upbound.io/stable/v0.26.0/bundle/up/linux_arm64.tar.gz'
-    sha256 'f44620e2d350ee03cbf131c922e6355b992a12f8cbe7f819ff37dcbc5e765637'
+    sha256 '1a33651f3cdd6c743054bc528cf6c78a538f0bdb9a01d3a96587d1d9880c5032'
   end
 
   def install
