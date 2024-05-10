@@ -17,28 +17,28 @@
 class Up < Formula
   desc 'The official Upbound CLI'
   homepage 'https://upbound.io'
-  version 'v0.29.0'
+  version 'v0.30.0'
   license 'Upbound Software License'
 
   if OS.mac? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.29.0/bundle/up/darwin_amd64.tar.gz'
-    sha256 '48907457ef588a78daa8163778b9435c27c8db9eca44c5c06dbfd67d1e1d8f70'
+    url 'https://cli.upbound.io/stable/v0.30.0/bundle/up/darwin_amd64.tar.gz'
+    sha256 '1bba19f54e1313d23d60944222f1388197d7264534c62e2a697e0122afe50f9e'
   end
   if OS.mac? && Hardware::CPU.arm?
-    url 'https://cli.upbound.io/stable/v0.29.0/bundle/up/darwin_arm64.tar.gz'
-    sha256 '618b3577583de2a68105040857fdcdbb6c588c7a7f201089eeb35e1886c51953'
+    url 'https://cli.upbound.io/stable/v0.30.0/bundle/up/darwin_arm64.tar.gz'
+    sha256 'ea52fef7909bd13872ee16960fb65f2e566b52d3ce76e987d2f99414af42411a'
   end
   if OS.linux? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.29.0/bundle/up/linux_amd64.tar.gz'
-    sha256 'd107a8a5c46a7d1c3135ccfd55de5e70ed258d1709b99b9075b1a58601d412e9'
+    url 'https://cli.upbound.io/stable/v0.30.0/bundle/up/linux_amd64.tar.gz'
+    sha256 'c1f5dcb83c0772be337cc98a32b373cf4e422c993953eadb0e1567d7bfbf7243'
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.29.0/bundle/up/linux_arm.tar.gz'
-    sha256 '20a32dfdba347c5a5a555980ab344144182a918e605fb64f8f24fc8241a832f3'
+    url 'https://cli.upbound.io/stable/v0.30.0/bundle/up/linux_arm.tar.gz'
+    sha256 'e95db0b139d7d16ce371d88a8983a44ed085ba863fa06acdde02d2fa716cbafe'
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.29.0/bundle/up/linux_arm64.tar.gz'
-    sha256 '0e8bbfe5152350dec4738668b2dba36b6e5000e9234445dc3b9d692765877616'
+    url 'https://cli.upbound.io/stable/v0.30.0/bundle/up/linux_arm64.tar.gz'
+    sha256 '61927aac5823a49c44ba6e406cde97563d0b5f68b6bdb432f88f973b198975f3'
   end
 
   def install
