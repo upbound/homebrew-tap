@@ -17,28 +17,28 @@
 class DockerCredentialUp < Formula
   desc 'Upbound Docker credential helper'
   homepage 'https://upbound.io'
-  version 'v0.38.2'
+  version 'v0.38.3'
   license 'Upbound Software License'
 
   if OS.mac? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.38.2/bundle/docker-credential-up/darwin_amd64.tar.gz'
-    sha256 '8e9bbb2beea92b085ae153723da3a6af0940ed79b4069652fe6739cd8c587a14'
+    url 'https://cli.upbound.io/stable/v0.38.3/bundle/docker-credential-up/darwin_amd64.tar.gz'
+    sha256 '188d42f49e15a91e63d6633f126f2b5ff278bcc89ab13f4a7bc200563ebd2c8e'
   end
   if OS.mac? && Hardware::CPU.arm?
-    url 'https://cli.upbound.io/stable/v0.38.2/bundle/docker-credential-up/darwin_arm64.tar.gz'
-    sha256 '5ad48746d2b33227f62fad4056287bb102c5a5e3d6dc397bab25e3f576e71eb0'
+    url 'https://cli.upbound.io/stable/v0.38.3/bundle/docker-credential-up/darwin_arm64.tar.gz'
+    sha256 'aebb63f720bb2fd4b6cd04eff364d5bea22facf066e8da49dd2716839e0c393e'
   end
   if OS.linux? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.38.2/bundle/docker-credential-up/linux_amd64.tar.gz'
-    sha256 '8671e98a3b3a0d3a414f99c0dfda4b3750f25d887ddc7fe4eee76ea0c92b5830'
+    url 'https://cli.upbound.io/stable/v0.38.3/bundle/docker-credential-up/linux_amd64.tar.gz'
+    sha256 '38f6d310d9d0a016781bd08e8f83b1f0c01ec69229286097ed651a36d0abfea2'
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.38.2/bundle/docker-credential-up/linux_arm.tar.gz'
+    url 'https://cli.upbound.io/stable/v0.38.3/bundle/docker-credential-up/linux_arm.tar.gz'
     sha256 '1a33651f3cdd6c743054bc528cf6c78a538f0bdb9a01d3a96587d1d9880c5032'
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.38.2/bundle/docker-credential-up/linux_arm64.tar.gz'
-    sha256 'dd76ea80e04cf6e711583060de3b3b0c1cb6e5927986e4620f922697982f413a'
+    url 'https://cli.upbound.io/stable/v0.38.3/bundle/docker-credential-up/linux_arm64.tar.gz'
+    sha256 'ae8e85d96403b179d765909b68220739190d55b975658b54c845bc653be0f5e7'
   end
 
   def install
