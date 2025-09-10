@@ -32,10 +32,6 @@ class DockerCredentialUp < Formula
     url 'https://cli.upbound.io/stable/v0.40.3/bundle/docker-credential-up/linux_amd64.tar.gz'
     sha256 '794f46b15989b506794fa62b9ebbd5ddc3593c2043dbd242a83221c8bb77ec79'
   end
-  if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.40.3/bundle/docker-credential-up/linux_arm.tar.gz'
-    sha256 '1a33651f3cdd6c743054bc528cf6c78a538f0bdb9a01d3a96587d1d9880c5032'
-  end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url 'https://cli.upbound.io/stable/v0.40.3/bundle/docker-credential-up/linux_arm64.tar.gz'
     sha256 'aaf6453972a78f6ee1ebdfc93e1a87e70bbcea7a806bfee91d9cf34f1c124dc8'

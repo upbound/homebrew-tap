@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-ARCHS = %w[darwin_amd64 darwin_arm64 linux_amd64 linux_arm linux_arm64].freeze
+ARCHS = %w[darwin_amd64 darwin_arm64 linux_amd64 linux_arm64].freeze
 
 OLD_VERSION = ARGV[0]
 NEW_VERSION = ARGV[1]
