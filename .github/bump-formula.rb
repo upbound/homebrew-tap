@@ -17,10 +17,10 @@ Dir.entries("#{REPO_ROOT}/Formula/").each do |file|
   ARCHS.each do |arch|
     formula = file.chomp('.rb')
 
-    url = "https://cli.upbound.io/stable/#{OLD_VERSION}/bundle/#{formula}/#{arch}.tar.gz"
+    url = "https://cli.upbound.io/stable/#{OLD_VERSION}/bundle/#{arch}/#{formula}.tar.gz"
     old_sha256 = `curl -sSL #{url} | sha256sum | cut -d' ' -f1`.strip
 
-    url = "https://cli.upbound.io/stable/#{NEW_VERSION}/bundle/#{formula}/#{arch}.tar.gz"
+    url = "https://cli.upbound.io/stable/#{NEW_VERSION}/bundle/#{arch}/#{formula}.tar.gz"
     new_sha256 = `curl -sSL #{url} | sha256sum | cut -d' ' -f1`.strip
 
     refs[arch] = {
