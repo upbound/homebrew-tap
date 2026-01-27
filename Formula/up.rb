@@ -17,24 +17,24 @@
 class Up < Formula
   desc 'The official Upbound CLI'
   homepage 'https://upbound.io'
-  version 'v0.44.2'
+  version 'v0.44.3'
   license 'Upbound Software License'
 
   if OS.mac? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.44.2/bundle/darwin_amd64/up.tar.gz'
-    sha256 '38d9de9b493b99a6d673340d665e1981610be0f38f7ecbaf57bcfdac743716bf'
+    url 'https://cli.upbound.io/stable/v0.44.3/bundle/darwin_amd64/up.tar.gz'
+    sha256 '46407999a22d1f53ee5100c0d74bf39a7976227dc2c55987369efcd10ea1a19a'
   end
   if OS.mac? && Hardware::CPU.arm?
-    url 'https://cli.upbound.io/stable/v0.44.2/bundle/darwin_arm64/up.tar.gz'
-    sha256 'e1ecf2ca8f1622923f08ff716a06723ce64f8af9ae46df1cbca0d0e64548bc30'
+    url 'https://cli.upbound.io/stable/v0.44.3/bundle/darwin_arm64/up.tar.gz'
+    sha256 '84c53f330f206560640e4d2de61a1616c9ddafa35bc797b2f8461fe7fc988734'
   end
   if OS.linux? && Hardware::CPU.intel?
-    url 'https://cli.upbound.io/stable/v0.44.2/bundle/linux_amd64/up.tar.gz'
-    sha256 '9dca2644f0aa18c3a195f73f436b40903f62632c92fafd001f2a42bd6ef74c8f'
+    url 'https://cli.upbound.io/stable/v0.44.3/bundle/linux_amd64/up.tar.gz'
+    sha256 '58141be503913c8e5423a3bc41a14fbb4e938bcb38fb0e06fd899a91fcfa15f5'
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url 'https://cli.upbound.io/stable/v0.44.2/bundle/linux_arm64/up.tar.gz'
-    sha256 '40dad716b95b33b9fe6f620fec94f21380619e56198b1e220e63bb4a495be1df'
+    url 'https://cli.upbound.io/stable/v0.44.3/bundle/linux_arm64/up.tar.gz'
+    sha256 '012d3401f4aac38ceea98d8426814db379c5da142cdc5be0dd4bc558b002f64e'
   end
 
   def install
